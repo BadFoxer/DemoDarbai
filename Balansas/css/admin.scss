@@ -1,0 +1,73 @@
+/*
+ Theme Name:   Balansas
+*/
+$mainConWd: 50vw;
+$manConHe: 80vh;
+$rpFontFamily: Arial, Helvetica, sans-serif;
+$inputDisplay: block;
+$labelDisplay: inline-block;
+$inputWd: 100%;
+$inputPad: 0.5rem;
+$inpuBorder: 1px solid #cccccc;
+$bordRadius: 0.3rem;
+$formzeroMP: 0;
+$formConPos: absolute;
+$formwConWd: 25%;
+$formPos: 50%;
+$formPosNeg: -50%;
+$fsBGC: #ffffff;
+$repPad: 1rem;
+$submitBGC: #042aa5;
+$submitBorder: none;
+$cursorStyle: pointer;
+$submitMarg: 2rem;
+$alignText: center;
+
+
+
+.main-container {
+    width: $mainConWd;
+    height: $manConHe;
+}
+
+.mySelect,
+.my_i,
+.my_s {
+    font-family: $rpFontFamily;
+    display: $inputDisplay;
+    width: $inputWd;
+    padding: $inputPad;
+    border: $inpuBorder;
+    border-radius: $bordRadius;
+    cursor: $cursorStyle;
+}
+
+.form-container {
+    margin: $formzeroMP;
+    position: $formConPos;
+    width: $formwConWd;
+    top: $formPos;
+    left: $formPos;
+    -ms-transform: translate($formPosNeg, $formPosNeg);
+    transform: translate($formPosNeg, $formPosNeg);
+    background-color: $fsBGC;
+    padding: $repPad;
+    border-radius: $bordRadius
+}
+
+.myLabel {
+    padding: $repPad $repPad $repPad $formzeroMP;
+    display: $labelDisplay;
+    font-family: $rpFontFamily;
+}
+
+.my_s {
+    background-color: $submitBGC;
+    color: $fsBGC;
+    padding: $repPad;
+    border: $submitBorder;
+    cursor: $cursorStyle;
+    margin-top: $submitMarg;
+    text-align: $alignText;
+
+}

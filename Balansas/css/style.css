@@ -1,0 +1,155 @@
+/*
+ Theme Name:   Balansas
+*/
+.navbar {
+  grid-area: navbar;
+  background-color: #09E10F;
+  font-size: 1.3rem;
+  text-align: center;
+  padding: 1rem;
+}
+
+.main {
+  grid-area: main;
+  width: 100%;
+  background-color: #DBF308;
+  padding: 1rem;
+  min-height: 400px;
+}
+
+.side1,
+.side2,
+.side3,
+.side4 {
+  background-color: #09F2D1;
+}
+
+.foot1,
+.foot2,
+.foot3 {
+  background-color: #FD93AF;
+}
+
+.side1 {
+  grid-area: side1;
+}
+
+.side2 {
+  grid-area: side2;
+}
+
+.side3 {
+  grid-area: side3;
+}
+
+.side4 {
+  grid-area: side4;
+}
+
+.foot1 {
+  grid-area: foot1;
+}
+
+.foot2 {
+  grid-area: foot2;
+}
+
+.foot3 {
+  grid-area: foot3;
+}
+
+.side1,
+.side2,
+.side3,
+.side4,
+.foot1,
+.foot2,
+.foot3 {
+  padding: 1rem;
+}
+
+.side1,
+.side2,
+.side3,
+.side4 {
+  margin-left: 2rem;
+}
+
+.grid-container {
+  font-size: 1rem;
+  font-family: Arial, Helvetica, sans-serif;
+  width: 90%;
+  margin: auto;
+  display: grid;
+  grid-template-areas: "navbar navbar navbar navbar navbar navbar navbar" " main main main main side1 side1 side1 " " main main main main side2 side2 side2 " " main main main main side3 side3 side3 " " main main main main side4 side4 side4 " " foot1 foot1 foot2 foot2  foot3 foot3 foot3 ";
+  grid-gap: 0.5rem;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th,
+td {
+  padding: 0.5rem;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.zp_max_i {
+  margin: 0;
+}
+
+.zp_year_i {
+  margin-top: calc(50px - 1rem);
+  text-align: center;
+}
+
+.w_break {
+  display: block;
+}
+
+.navbar {
+  display: block;
+}
+
+@media only screen and (max-width : 768px) {
+  .main {
+    width: auto;
+  }
+  .grid-container {
+    width: 100%;
+    grid-template-areas: "navbar navbar navbar navbar" "side1 side1 side2 side2" "side3 side3 side4 side4" "main main main main" "foot1 foot1 foot2 foot2" "foot3 foot3 foot3 foot3";
+  }
+  .zp_max_i,
+.txc {
+    margin: auto;
+    width: 75%;
+  }
+  .foot1,
+.foot2,
+.foot3 {
+    height: 50px;
+  }
+  .zp_year_i {
+    margin-top: calc(25px - 2rem);
+  }
+  .side1,
+.side2,
+.side3,
+.side4 {
+    margin: 0;
+  }
+  .navbar {
+    display: block;
+  }
+}
+@media only screen and (max-width : 600px) {
+  .grid-container {
+    grid-template-areas: "main main main main" "side1 side1 side2 side2" "side3 side3 side4 side4" "foot1 foot1 foot1 foot1" "foot2 foot2 foot2 foot2" "foot3 foot3 foot3 foot3";
+  }
+  .navbar {
+    display: none;
+  }
+}/*# sourceMappingURL=style.css.map */

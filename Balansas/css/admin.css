@@ -1,0 +1,47 @@
+/*
+ Theme Name:   Balansas
+*/
+.main-container {
+  width: 50vw;
+  height: 80vh;
+}
+
+.mySelect,
+.my_i,
+.my_s {
+  font-family: Arial, Helvetica, sans-serif;
+  display: block;
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid #cccccc;
+  border-radius: 0.3rem;
+  cursor: pointer;
+}
+
+.form-container {
+  margin: 0;
+  position: absolute;
+  width: 25%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #ffffff;
+  padding: 1rem;
+  border-radius: 0.3rem;
+}
+
+.myLabel {
+  padding: 1rem 1rem 1rem 0;
+  display: inline-block;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.my_s {
+  background-color: #042aa5;
+  color: #ffffff;
+  padding: 1rem;
+  border: none;
+  cursor: pointer;
+  margin-top: 2rem;
+  text-align: center;
+}/*# sourceMappingURL=admin.css.map */

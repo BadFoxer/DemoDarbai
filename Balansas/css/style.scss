@@ -1,0 +1,257 @@
+/*
+ Theme Name:   Balansas
+*/
+$navbar: navbar;
+$navbarFontSize: 1.3rem;
+$rpTextAlign: center;
+$rpPadding: 1rem;
+$mainHeight: 400px;
+$rpWidth: 100%;
+$tablettextWidth: 75%;
+$tabletHeight: 50px;
+$autoWidth: auto;
+$main: main;
+$side1: side1;
+$side2: side2;
+$side3: side3;
+$side4: side4;
+$foot1: foot1;
+$foot2: foot2;
+$foot3: foot3;
+$sidesMarginL: 2rem;
+$bgcolorNav: #09E10F;
+$bgcolorMain: #DBF308;
+$bgcolorSide: #09F2D1;
+$bgcolorFooter: #FD93AF;
+$fontOnGrid: 1rem;
+$fontFamilyGid: Arial, Helvetica, sans-serif;
+$rpMaginAuto: auto;
+$Grid: grid;
+$rpHalfPadding: 0.5rem;
+// desktop grid 
+$navAreaDesktop: 'navbar navbar navbar navbar navbar navbar navbar';
+$mainAreaDesktopSM1: ' main main main main side1 side1 side1 ';
+$mainAreaDesktopSM2: ' main main main main side2 side2 side2 ';
+$mainAreaDesktopSM3: ' main main main main side3 side3 side3 ';
+$mainAreaDesktopSM4: ' main main main main side4 side4 side4 ';
+$footAreaDesktop: ' foot1 foot1 foot2 foot2  foot3 foot3 foot3 ';
+// tablet grid setup
+$navAreaTablet: 'navbar navbar navbar navbar';
+$SideAreaTablet1: 'side1 side1 side2 side2';
+$SideAreaTablet2: 'side3 side3 side4 side4';
+$mainAreaTablet: 'main main main main';
+$footAreaTablet1: 'foot1 foot1 foot2 foot2';
+$footAreaTablet2: 'foot3 foot3 foot3 foot3';
+
+
+// mobile grid setup
+$mainAreaMobile: 'main main main main';
+$SideAreaMobileS1: 'side1 side1 side2 side2';
+$SideAreaMobileS2: 'side3 side3 side4 side4';
+$footAreaMobile1: 'foot1 foot1 foot1 foot1';
+$footAreaMobile2: 'foot2 foot2 foot2 foot2';
+$footAreaMobile3: 'foot3 foot3 foot3 foot3';
+
+$myTableBorder: collapse;
+$tableTextAlign: left;
+$myBorder: 1px solid #ddd;
+$zeroMargin: 0;
+$desktopMargin_zp_year_i: calc(50px - 1rem);
+$tabletMargin_zp_year_i: calc(25px - 2rem);
+$rpDisplay: block;
+$media-tablet: "only screen and (max-width : 768px)";
+$media-mobile: "only screen and (max-width : 600px)";
+$noneDisplay: none;
+
+
+.navbar {
+    grid-area: $navbar;
+    background-color: $bgcolorNav;
+    font-size: $navbarFontSize;
+    text-align: $rpTextAlign;
+    padding: $rpPadding;
+}
+
+.main {
+    grid-area: $main;
+    width: $rpWidth;
+    background-color: $bgcolorMain;
+    padding: $rpPadding;
+    min-height: $mainHeight;
+}
+
+.side1,
+.side2,
+.side3,
+.side4 {
+    background-color: $bgcolorSide;
+}
+
+.foot1,
+.foot2,
+.foot3 {
+    background-color: $bgcolorFooter;
+}
+
+
+.side1 {
+    grid-area: $side1;
+
+}
+
+.side2 {
+    grid-area: $side2;
+
+
+}
+
+.side3 {
+    grid-area: $side3;
+
+
+}
+
+.side4 {
+    grid-area: $side4;
+
+}
+
+.foot1 {
+    grid-area: $foot1;
+
+
+}
+
+.foot2 {
+    grid-area: $foot2;
+
+
+}
+
+.foot3 {
+    grid-area: $foot3;
+
+}
+
+.side1,
+.side2,
+.side3,
+.side4,
+.foot1,
+.foot2,
+.foot3 {
+    padding: $rpPadding;
+}
+
+.side1,
+.side2,
+.side3,
+.side4 {
+    margin-left: $sidesMarginL;
+}
+
+
+.grid-container {
+    font-size: $fontOnGrid;
+    font-family: $fontFamilyGid;
+    width: 90%;
+    margin: $rpMaginAuto;
+    display: $Grid;
+    grid-template-areas:
+        $navAreaDesktop $mainAreaDesktopSM1 $mainAreaDesktopSM2 $mainAreaDesktopSM3 $mainAreaDesktopSM4 $footAreaDesktop;
+    grid-gap: $rpHalfPadding;
+
+}
+
+table {
+    border-collapse: $myTableBorder;
+    width: $rpWidth;
+
+}
+
+th,
+td {
+    padding: $rpHalfPadding;
+    text-align: $tableTextAlign;
+    border-bottom: $myBorder;
+
+}
+
+.zp_max_i {
+    margin: $zeroMargin;
+
+}
+
+.zp_year_i {
+    margin-top: $desktopMargin_zp_year_i;
+    text-align: $rpTextAlign;
+
+}
+
+.w_break {
+    display: $rpDisplay;
+
+}
+
+.navbar {
+    display: $rpDisplay;
+}
+
+@media #{$media-tablet} {
+
+    .main {
+        width: $autoWidth;
+
+    }
+
+    .grid-container {
+        width: $rpWidth;
+        grid-template-areas:
+            $navAreaTablet $SideAreaTablet1 $SideAreaTablet2 $mainAreaTablet $footAreaTablet1 $footAreaTablet2 ;
+
+    }
+
+
+    .zp_max_i,
+    .txc {
+        margin: $rpMaginAuto;
+        width: $tablettextWidth;
+
+    }
+
+    .foot1,
+    .foot2,
+    .foot3 {
+        height: $tabletHeight;
+    }
+
+    .zp_year_i {
+        margin-top: $tabletMargin_zp_year_i;
+
+    }
+
+    .side1,
+    .side2,
+    .side3,
+    .side4 {
+        margin: $zeroMargin;
+
+    }
+
+    .navbar {
+        display: $rpDisplay;
+    }
+
+}
+
+@media #{$media-mobile} {
+    .grid-container {
+        grid-template-areas:
+            $mainAreaMobile $SideAreaMobileS1 $SideAreaMobileS2 $footAreaMobile1 $footAreaMobile2 $footAreaMobile3 ;
+
+    }
+
+    .navbar {
+        display: $noneDisplay;
+    }
+}
