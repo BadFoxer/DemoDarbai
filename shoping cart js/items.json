@@ -1,0 +1,32 @@
+[
+    {
+        "itemname": "Huawei Nova 9, 128 GB, Dual SIM, Starry Blue",
+        "itemprice": 345.00,
+        "itempicture": "/images/download.png"
+    },
+    {
+        "itemname": "Nike kuprinė Elemental, 21 L, juoda",
+        "itemprice": 39.00,
+        "itempicture": "/images/download.png"
+    },
+    {
+        "itemname": "Krepšinio kamuolys Spalding TF-150, 6 dydis",
+        "itemprice": 15.00,
+        "itempicture": "/images/download.png"
+    },
+    {
+        "itemname": "Power HBQ Pro (Q20) belaidės ausinės, juodos",
+        "itemprice": 35.00,
+        "itempicture": "/images/download.png"
+    },
+    {
+        "itemname": "Pelė Logitech G Pro X Superlight, juoda",
+        "itemprice": 125.00,
+        "itempicture": "/images/download.png"
+    },
+    {
+        "itemname": "Telefonas Samsung Galaxy A33 5G, 128GB, Dual SIM, juoda",
+        "itemprice": 308.00,
+        "itempicture": "/images/download.png"
+    }
+]
